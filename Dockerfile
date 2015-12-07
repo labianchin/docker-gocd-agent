@@ -24,6 +24,7 @@ RUN set -x \
 
 RUN mkdir -p /var/lib/go-agent/config && rm -f /etc/default/go-agent
 
+ENV GO_SERVER=go-server
 ENV GO_SERVER_PORT=8153
 ENV AGENT_WORK_DIR=/var/lib/go-agent
 ENV AGENT_KEY=123456789abcdef
